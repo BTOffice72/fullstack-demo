@@ -25,7 +25,7 @@ db.connect(err => {
 
 // Health check
 app.get("/api/health", (req, res) => {
-    res.json({ status: "Backeng running properly." });
+    res.json({ status: "Backeng running properly (Health check completed)." });
 });
 
 // Sample DB API
