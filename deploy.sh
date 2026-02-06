@@ -19,7 +19,7 @@ cd $APP_DIR || {
 echo "➡️ Pulling latest code from GitHub"
 git fetch origin
 git checkout main
-git pull origin main || {
+git pull --rebase origin main|| {
   echo "❌ Git pull failed. Deployment stopped."
   exit 1
 }
