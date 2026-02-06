@@ -25,7 +25,7 @@ db.connect(err => {
 
 // Health check
 app.get("/api/health", (req, res) => {
-    res.json({ status: "Backend running (local)" });
+    res.json({ status: "Backeng running properly." });
 });
 
 // Sample DB API
